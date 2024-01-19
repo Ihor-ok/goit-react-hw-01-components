@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from "./Statistics.module.css";
 
 export default function Statistics({ title, stats }) {
-  //    const defaultPercentage = 0;
+     const defaultPercentage = 0;
   
 
 
@@ -13,7 +13,7 @@ export default function Statistics({ title, stats }) {
           return (<ul className={css.stat_list}>
             <li className={css.item}>
             <span className={css.label}>{dataStats.label}</span>
-              <span className={css.percentage}>{dataStats.percentage }</span>
+              <span className={css.percentage}>{dataStats.percentage ?? defaultPercentage }</span>
             </li>
           </ul>)
         })}
