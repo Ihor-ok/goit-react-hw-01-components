@@ -3,8 +3,6 @@ import Statistics from 'components/Statistics/Statistics.jsx'
 import user from '../user.json'
 import data from '../data.json'
 
-// { avatar,  username, tag, location, stats}
-
 
 export default function App() {
   return (
@@ -16,18 +14,10 @@ export default function App() {
         location={user.location}
         stats={user.stats}
       />
+      {/* {data.map(d => (<Statistics title="Upload stats" stats={data} key={d.id}/>))} */}
+
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data}  />
-
-      {/* <div>
-        <Statistics title="Upload stats"  />
-    
-        {data.map(d => (<Statistics
-        key={d.id}
-        statsLabel={d.label}
-        statsPercentage={d.percentage}
-        />))}
-      </div> */}
     </>
   )
 };
