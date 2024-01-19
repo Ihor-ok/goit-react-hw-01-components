@@ -46,13 +46,3 @@
     color: #555;
 }
 
-/* Додатковий стиль для підкреслення значень прогресу */
-/* .percentage::before {
-    content: '';
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background-color: #4caf50;
-    margin-right: 8px;
-    border-radius: 50%;
-} */
