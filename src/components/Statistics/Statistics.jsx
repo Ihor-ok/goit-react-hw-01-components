@@ -11,7 +11,7 @@ export default function Statistics({ title, stats }) {
         {title && <h2 className={css.title}>{title}</h2>}
         <ul className={css.stat_list}>{stats.map(dataStats => {
           return (
-            <li className={css.item}>
+            <li key={dataStats.id} className={css.item}>
             <span className={css.label}>{dataStats.label}</span>
               <span className={css.percentage}>{dataStats.percentage ?? defaultPercentage }%</span>
             </li>
